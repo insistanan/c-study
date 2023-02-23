@@ -1,5 +1,6 @@
 //
 // Created by yzn__ on 2022/12/8.
+//一维数组动态和
 //
 
 int* runningSum(int* nums, int numsSize, int* returnSize){

@@ -1,5 +1,6 @@
 //
 // Created by yzn__ on 2022/12/2.
+//倒置二维数组
 //
 #include <stdio.h>
 void inverse1(int n,int m,int (*p)[m]){
@@ -26,6 +27,7 @@ void inverse1(int n,int m,int (*p)[m]){
             }
             break;
     }
+    //打印
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
             printf("%d, ",p[i][j]);
@@ -42,6 +44,7 @@ void inverse2(int n, int m,int *p){
         *(p+len-1-i) = *(p+i) - *(p+len-1-i);
         *(p+i) = *(p+i) - *(p+len-1-i);
     }
+    //打印
     for (int i = 0; i < len; ++i) {
         printf("%d, ",*(p+i) );
         if( (i+1)%m == 0) printf("\n");
